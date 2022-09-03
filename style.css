@@ -28,6 +28,11 @@ header {
   margin-left: 20px;
 }
 
+#inputs {
+  width: 200px;
+  margin: auto;
+}
+
 #answer {
   text-align: center;
   font-size: 30px;
