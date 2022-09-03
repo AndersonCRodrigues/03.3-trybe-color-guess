@@ -2,6 +2,9 @@ const ballContainer = document.querySelector('#ball-container');
 const textRGB = document.querySelector('#rgb-color');
 const textAnswer = document.querySelector('#answer');
 const resetBtn = document.querySelector('#reset-game');
+const nextBtn = document.querySelector('#next');
+const score = document.querySelector('#score');
+let points = 0;
 
 function randomColor() {
   const red = Math.floor(Math.random() * 256);
@@ -29,17 +32,21 @@ function addBall() {
 }
 
 ballContainer.addEventListener('click', (orign) => {
-  if (orign.target.id === textRGB.innerText) textAnswer.innerText = 'Acertou!';
-  else textAnswer.innerText = 'Errou! Tente novamente!';
+  if (orign.target.id === textRGB.innerText) {
+    textAnswer.innerText = 'Acertou!';
+    points += 3;
+    score.innerText = `Placar: ${points}`;
+  } else textAnswer.innerText = 'Errou! Tente novamente!';
 });
 
 resetBtn.addEventListener('click', () => {
+
+  score.innerText = 'Placar: 0';
   let child = ballContainer.firstChild;
   while (child) {
     ballContainer.removeChild(child);
     child = ballContainer.firstChild;
-  }
-  addBall();
+  } addBall();
 });
 
 window.addEventListener('load', addBall);

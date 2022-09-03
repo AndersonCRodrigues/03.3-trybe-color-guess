@@ -3,13 +3,14 @@ header {
   font-size: 2em;
 }
 
-#title , #rgb-color {
+#title , #rgb-color , #score {
   text-align: center;
 }
 
-#rgb-color {
+#paragrafos {
   margin-top: 30px;
   font-size: 30px;
+  text-align: center;
 }
 
 #ball-container {
@@ -37,3 +38,4 @@ header {
   text-align: center;
   font-size: 30px;
 }
+
