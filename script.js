@@ -1,0 +1,1 @@
+const ballContainer = document.querySelector('#ball-container');
