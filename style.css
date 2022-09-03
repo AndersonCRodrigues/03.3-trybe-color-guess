@@ -1,3 +1,8 @@
+header {
+  margin-top: 60px;
+  font-size: 2em;
+}
+
 #title , #rgb-color {
   text-align: center;
 }
@@ -21,4 +26,9 @@
   display: inline-block;
   border: 1px solid black;
   margin-left: 20px;
+}
+
+#answer {
+  text-align: center;
+  font-size: 30px;
 }
