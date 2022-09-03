@@ -32,10 +32,15 @@ header {
 #inputs {
   width: 200px;
   margin: auto;
+  vertical-align: auto;
 }
 
 #answer {
   text-align: center;
   font-size: 30px;
+}
+
+#reset-game {
+  margin: auto;
 }
 

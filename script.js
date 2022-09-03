@@ -2,7 +2,6 @@ const ballContainer = document.querySelector('#ball-container');
 const textRGB = document.querySelector('#rgb-color');
 const textAnswer = document.querySelector('#answer');
 const resetBtn = document.querySelector('#reset-game');
-const nextBtn = document.querySelector('#next');
 const score = document.querySelector('#score');
 let points = 0;
 
@@ -40,7 +39,6 @@ ballContainer.addEventListener('click', (orign) => {
 });
 
 resetBtn.addEventListener('click', () => {
-
   score.innerText = 'Placar: 0';
   let child = ballContainer.firstChild;
   while (child) {
